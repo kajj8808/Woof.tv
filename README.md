@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Woof.tv
 
-## Getting Started
+- useSWR와 mutate를 사용하여 아래와 같은 화면을 구현하세요.
 
-First, run the development server:
+## 요구사항:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 매 동영상마다 '좋아요' 버튼을 만드세요.
+- mutate를 사용하여 isLiked의 값을 false -> true로 변경하고 UI에 적용하세요.
+- 새로운 강아지 동영상을 얻을 수 있는 버튼을 만드세요.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 참고:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- https://dogs-api.nomadcoders.workers.dev의 URL에 접속하면 강아지 동영상을 얻을 수 있습니다.
+- 값을 다시 가져올땐 mutate함수를 인자값 없이 사용하세요.
+- SWR은 챌린지 blueprint 예제에 설정되어있습니다.
+- API 응답값은 아래와 같습니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Screenshot
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![woof-nomadcoder-image](https://github.com/kajj8808/Woof.tv/assets/71279997/7ca421f7-7d2d-49da-a1cd-61d60c2254d7)
